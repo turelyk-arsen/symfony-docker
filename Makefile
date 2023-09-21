@@ -1,15 +1,15 @@
 ## Docker compose
 
-dc_build:
+build:
 	docker-compose -f ./docker/docker-compose.yml build
 
-dc_start:
+start:
 	docker-compose -f ./docker/docker-compose.yml start
 
-dc_up:
+up:
 	docker-compose -f ./docker/docker-compose.yml up -d --remove-orphans
 
-dc_stop:
+stop:
 	docker-compose -f ./docker/docker-compose.yml stop
 
 dc_ps:
@@ -21,8 +21,11 @@ dc_logs:
 dc_down:
 	docker-compose -f ./docker/docker-compose.yml down -v --rmi==all --remove-orphans
 
+bu:
+	docker compose -f ./docker/docker-compose.yml up -d --build
+
 
 ## App
 
-app_bash:
+bash:
 	docker-compose -f ./docker/docker-compose.yml exec -u www-data php-fpm bash
