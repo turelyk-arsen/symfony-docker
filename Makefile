@@ -21,7 +21,7 @@ dc_logs:
 dc_down:
 	docker-compose -f ./docker/docker-compose.yml down -v --rmi==all --remove-orphans
 
-bu:
+built:
 	docker compose -f ./docker/docker-compose.yml up -d --build
 
 
