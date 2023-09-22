@@ -53,6 +53,16 @@
             "pathMappings": {
                 "/var/www": "${workspaceFolder}"
             }
-        }
+        },
+        // {
+        //     "name": "Run PHPUnit in Docker",
+        //     "type": "phpunit",
+        //     "request": "launch",
+        //     "program": "${workspaceFolder}/vendor/bin/phpunit",
+        //     "args": [
+        //       "--configuration",
+        //       "${workspaceFolder}/phpunit.xml"
+        //     ]
+        //   }
     ]
 }
