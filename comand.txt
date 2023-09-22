@@ -1,0 +1,5 @@
+composer require --dev phpunit/phpunit symfony/test-pack
+
+ *  Выполнение задачи: php 'd:/Code/Symfony/symfony-docker/vendor/phpunit/phpunit/phpunit' 
+ --colors=always 'd:/Code/Symfony/symfony-docker/tests/Funktional/Controller/HealthCheckActionTest.php' 
+ --filter test_request_responded_successful_result 
