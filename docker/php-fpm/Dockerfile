@@ -21,6 +21,12 @@ RUN apk --no-cache add shadow && \
     groupmod -o -g ${PGID} www-data && \
     usermod -o -u ${PUID} -g www-data www-data
 
+#USER www-data
+
+#postgres
+RUN apk add --no-cache libpq-dev && docker-php-ext-install pdo_pgsql
+
+#source code
 COPY ./ /var/www
 WORKDIR /var/www
 
